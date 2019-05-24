@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Header from './components/header';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 export default class Class extends Component {
 
     render() {
         return (
-            <div className="class-name">
-                content
-            </div>
+            <BrowserRouter>
+              <Header />
+              <Switch>
+                
+
+              </Switch>
+            </BrowserRouter>
         );
     }
 }
