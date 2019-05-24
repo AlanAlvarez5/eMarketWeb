@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button'
 
-export default class Navbar extends Component {
+
+export default class Header extends Component {
   render() {
     return (
       <NavWrapper className = "nav navbar-expand-sm navbar-dark px-sm-5">
@@ -16,6 +17,9 @@ export default class Navbar extends Component {
                 <Link to = "/" className = "nav-link text-success">Productos</Link>
             </li>
         </ul>
+        <Link to = "/Registro" className = "ml-auto">
+        </Link>
+  
         <Link to = "/cart" className = "ml-auto">
             <ButtonContainer>
                 <span  className="mr-2">
@@ -23,6 +27,7 @@ export default class Navbar extends Component {
                 </span>
                 Carrito
             </ButtonContainer>
+            
         </Link>
       </NavWrapper>
     );
