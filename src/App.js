@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import Header from './components/header';
 import AddProducto from './components/addProducto';
 import "bootstrap/dist/css/bootstrap.min.css";
-import SignUp from './components/SignUp';
+import SignUp from './components/SingUp';
 import Ejemplo from   './components/Ejemplo';
 
 export default class Class extends Component {

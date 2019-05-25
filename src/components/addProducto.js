@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-export default class addProducto extends Component {
+export default class Class extends Component {
 
     state = {categorias: []}
 
