@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Header from './components/header';
-import AddProducto from './components/AddProducto';
+import AddProducto from './components/addProducto';
 import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from './components/SignUp';
 import Ejemplo from   './components/Ejemplo';
