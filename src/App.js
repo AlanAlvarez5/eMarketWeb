@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Header from './components/header';
-import AddProducto from './components/addProducto';
+import AddProducto from './components/AddProducto';
 import "bootstrap/dist/css/bootstrap.min.css";
-import SignUp from './components/SingUp';
-
-
-
-
+import SignUp from './components/SignUp';
+import Ejemplo from   './components/Ejemplo';
 
 export default class Class extends Component {
 
@@ -18,6 +15,8 @@ export default class Class extends Component {
               <Switch>
                 <Route exact path ="/AddProducto" component={AddProducto} />
                 <Route path = "/SignUp" component = {SignUp}></Route>
+                <Route path= "/Ejemplo" component = {Ejemplo}></Route>
+
               </Switch>
               </React.Fragment>
         );

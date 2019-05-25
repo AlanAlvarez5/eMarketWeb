@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button'
 
-
 export default class Header extends Component {
   render() {
     return (
