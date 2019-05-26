@@ -18,6 +18,8 @@ export default class Header extends Component {
         </ul>
         <Link to = "/Registro" className = "ml-auto">
         </Link>
+
+        
   
         <Link to = "/cart" className = "ml-auto">
             <ButtonContainer>

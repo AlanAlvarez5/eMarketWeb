@@ -12,7 +12,10 @@ export default class SingUp extends Component {
                                 <h3>Registro</h3>
                             </div>
                             <div className="card-body">
-                                <form action="/users/addUser" method="post">
+                                <form action="/signup" method="post">
+                                    <div className="form-group">
+                                        <input type="text" name="username" placeholder="Usuario" className="form-control" autofocus/>
+                                    </div>
                                     <div className="form-group">
                                         <input type="text" name="nombre" placeholder="Nombre" className="form-control" autofocus/>
                                     </div>
@@ -44,7 +47,7 @@ export default class SingUp extends Component {
                                         <p >Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de eMarket. </p>
                                     </div>
                                     <div className="form-group text-right" >
-                                        <button className="btn btn-success " type= "submit" value="Submit" onClick={() => {alert("Uusario creado")}}>Registrarse</button>
+                                        <button className="btn btn-success " type= "submit" value="Submit" onClick={() => {alert("Usuario creado")}}>Registrarse</button>
                                     </div>
                                 </form>
                             </div>
