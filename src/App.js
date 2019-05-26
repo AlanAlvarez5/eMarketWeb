@@ -3,8 +3,9 @@ import {Route, Switch} from 'react-router-dom';
 import Header from './components/header';
 import AddProducto from './components/addProducto';
 import "bootstrap/dist/css/bootstrap.min.css";
-import SignUp from './components/SingUp';
-import Cart from './components/Cart/Cart';
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
+import Cart from './components/Cart/Cart'
 import Ejemplo from   './components/Ejemplo';
 import Home from './components/Home';
 

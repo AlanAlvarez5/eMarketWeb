@@ -16,7 +16,10 @@ export default class Header extends Component {
                 <Link to = "/" className = "nav-link text-success">Productos</Link>
             </li>
         </ul>
-        <Link to = "/SignUp" className = "ml-auto"> Registrarse </Link>
+        <Link to = "/Registro" className = "ml-auto">
+        </Link>
+
+        
   
         <Link to = "/cart" className = "ml-auto">
             <ButtonContainer>
