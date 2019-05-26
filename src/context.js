@@ -60,51 +60,52 @@ class ProductProvider extends Component {
         });
 
     };
-openModal = id => {
-    const product = this.getItem(id);
-    this.setState(()=>{
-        return {modalProduct:product, modalOpen:true}
-    });
-};
+    openModal = id => {
+        const product = this.getItem(id);
+        this.setState(()=>{
+            return {modalProduct:product, modalOpen:true}
+        });
+    };
 
-closeModal = () => {
-    this.setState(() => {
-        return {modalOpen:false}
-    });
-};
+    closeModal = () => {
+        this.setState(() => {
+            return {modalOpen:false}
+        });
+    };
 
-increment = (id) => {
-    console.log('este es el método de incremento');
-}
+    increment = (id) => {
+        console.log('este es el método de incremento');
+    }
 
-decrement = (id) => {
-    console.log('este es el método de decremento');
-}
+    decrement = (id) => {
+        console.log('este es el método de decremento');
+    }
 
-removeItem = (id) => {
-    console.log('Item removido');
-}
+    removeItem = (id) => {
+        console.log('Item removido');
+    }
 
-clearCart = () => {
-    console.log('El carrito fue limpiado');
-}
+    clearCart = () => {
+        console.log('El carrito fue limpiado');
+    }
 
-addTotals = () => {
-    let subTotal = 0;
-    this.state.cart.map(item => (subTotal += item.total));
-    const tempTax = subTotal * 0.16;
-    const tax = parseFloat(tempTax.toFixed(2));
-    const tempTotal = subTotal + tax;
-    const total = parseFloat(tempTotal.toFixed(2));
+    addTotals = () => {
+        let subTotal = 0;
+        this.state.cart.map(item => (subTotal += item.total));
+        const tempTax = subTotal * 0.16;
+        const tax = parseFloat(tempTax.toFixed(2));
+        const tempTotal = subTotal + tax;
+        const total = parseFloat(tempTotal.toFixed(2));
 
-    this.setState(() => {
-        return {
-            cartSubTotal:subTotal,
-            cartTax:tax,
-            cartTotal:total
-        }
-    })
-}
+        this.setState(() => {
+            return {
+                cartSubTotal:subTotal,
+                cartTax:tax,
+                cartTotal:total
+            }
+        })
+    }
+    
     render() {
         return (
         <ProductContext.Provider value = {{
@@ -116,7 +117,8 @@ addTotals = () => {
             increment: this.increment,
             decrement: this.decrement,
             removeItem: this.removeItem,
-            clearCart: this.clearCart
+            clearCart: this.clearCart,
+            addTotals: this.addTotals,
 
         }}>
             {this.props.children}
@@ -124,6 +126,7 @@ addTotals = () => {
         );
     }
 }
+{/*Antes decia ProductContext.Consumer*/}
 
 const ProductConsumer = ProductContext.Consumer;
 

@@ -20,8 +20,9 @@ export default class Class extends Component {
                 <Route exact path ="/" component={Home} />
                 <Route path ="/AddProducto" component={AddProducto} />
                 <Route path = "/SignUp" component = {SignUp}></Route>
-                <Route path= "/Cart" component = {Cart}></Route>
-                <Route path= "/Ejemplo" component = {Ejemplo}></Route>
+                <Route path = "/SignIn" component = {SignIn}></Route>
+                <Route path = "/Cart" component = {Cart}></Route>
+                <Route path = "/Ejemplo" component = {Ejemplo}></Route>
 
               </Switch>
               </React.Fragment>
