@@ -56,7 +56,7 @@ export default class Class extends Component {
                           </div>
 
                           <div clasName="form-group">
-                            <select name="instructor_id" className="form-control">
+                            <select name="categoria_id" className="form-control">
                               {this.state.categorias.map(categoria => (
                                 <option value={categoria.categoria_id}  >{categoria.categoria}</option>
                               ))}
