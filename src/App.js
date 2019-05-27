@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import Cart from './components/Cart/Cart'
+import Details from './components/Details'
 import Ejemplo from   './components/Ejemplo';
 import Home from './components/Home';
 
@@ -22,6 +23,7 @@ export default class Class extends Component {
                 <Route path = "/SignUp" component = {SignUp}></Route>
                 <Route path = "/SignIn" component = {SignIn}></Route>
                 <Route path = "/Cart" component = {Cart}></Route>
+                <Route path = "/Details" component = {Details}></Route>
                 <Route path = "/Ejemplo" component = {Ejemplo}></Route>
 
               </Switch>
