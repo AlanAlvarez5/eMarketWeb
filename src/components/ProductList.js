@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import Product from './Product';
 import Title from './Title';
-
-import ControlledCarousel from './Carousel';
 import {ProductConsumer} from '../context';
+import ControlledCarousel from './Carousel';
 
-export default class Home extends Component {
+export default class ProductList extends Component {
     render() {
         return (
         <React.Fragment>
@@ -14,18 +13,17 @@ export default class Home extends Component {
                <div className = "container" >
                     <Title name = "Nuestros" title = "productos" />
                     <div className = "row">
-                        {/* <ProductConsumer>
+                        <ProductConsumer>
                             {value=>{
                                 return value.products.map(product =>{
                                     return <Product key = {product.id} product={product} />
                                 })
                             }}
-                        </ProductConsumer> */}
-                        
+                        </ProductConsumer>
                     </div>
                </div>
             </div>
         </React.Fragment>
-        );
+        )
     }
 }

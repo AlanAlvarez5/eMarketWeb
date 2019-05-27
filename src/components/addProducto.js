@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 
-
-
-
-export default class Class extends Component {
+export default class AddProducto extends Component {
 
     state = {categorias: []}
 
@@ -20,42 +18,52 @@ export default class Class extends Component {
             <div className="AddProducto">
 
               <form action="/productos/addProducto" method="post">
+                
 
-
-                <div class="HubHeader" Style="margin-left: 3rem">
-                  <ul class ="nav nav-pills navbar-expand-sm navbar-dark px-sm-5">
-                    <a class="btn btn-outline-success" href="http://localhost:3000" role="button"> Volver </a>
-                    <h3 Style="margin-left: 1rem"> Nuevo Producto </h3>
-                    <div className="navbar-brand">
-                      <input type="submit" value="Aceptar" class="btn btn-success" onClick={() => {alert("Clase Creada")}}/>
-                    </div>
+                <HubHeader className = "nav navbar-expand-sm navbar-dark px-sm-5">
+                  <div>
+                    <a className="btn btn-outline-success" href="http://localhost:3000" role="button"> Volver </a>
+                  </div>
+                  <ul className="ml-1">
+                      <h3> Nuevo Producto</h3>
                   </ul>
-                </div>
+                    
+                  <div className="ml-auto">
+                      <input type="submit" value="Publicar" class="btn btn-success" />
+                  </div>
+                </HubHeader>
       
                 <div class="container">
-                  
-                  <div className="row" Style="margin-top: 3rem">
+                  <div className="row" Style="margin-top: 1rem">
                     
-                    <div className="col-sm-4">
-                      <div className="card text-center shadow-sm  bg-white rounded" Style="width: 100%">
+                    {/*Hub de datos del producto (los input(*/}
+                    <div className="col-sm-5">
+                      <div className="card shadow-sm bg-white rounded" Style="width: 100%">
                         <div className="card-body">
+                                                  
                           <div className="form-group">
-                            <input type="text" name="proveedor_id" placeholder="ID del proveedor" className="form-control" autofocus defaultValue={this.props.proveedor_id}/>
+                            <label for="validationDefault01"> ID del proveedor </label>
+                            <input type="text" name="proveedor_id" placeholder="ID del proveedor" id ="validationDefault01" className="form-control" autofocus defaultValue={this.props.proveedor_id} required/>
                           </div>
                           <div className="form-group">
-                            <input type="text" name="nombre" placeholder="Nombre" className="form-control" autofocus/>
+                            <label for="validationDefault02"> Nombre del producto </label>
+                            <input type="text" name="nombre" placeholder="Nombre del producto" id="validationDefault02" className="form-control" autofocus required/>
+                            <div class="invalid-feedback"> Complete el campo por favor</div>
                           </div>
                           <div className="form-group">
-                            <input type="text" name="precio" placeholder="Precio" className="form-control" autofocus/>
+                            <label for="validationDefault03"> Precio </label>
+                            <input type="text" name="precio" placeholder="Precio" id="validationDefault03" className="form-control" autofocus required/>
                           </div>
                           <div className="form-group">
-                            <input type="text" name="descripcion" placeholder="Descripción" className="form-control" autofocus/>
+                            <label for="validationDefault04"> Descripción </label>
+                            <input type="text" name="descripcion" placeholder="Descripción" id="validationDefault04" className="form-control" autofocus required/>
                           </div>
                           <div className="form-group">
-                            <input type="number" name="existencia" placeholder="Existencia" className="form-control" autofocus/>
+                            <label for="validationDefault05"> Número de productos disponibles </label>
+                            <input type="number" name="existencia" placeholder="Existencia" id="validationDefault05" className="form-control" autofocus required/>
                           </div>
-
                           <div clasName="form-group">
+                            <label> Categoría </label> 
                             <select name="categoria_id" className="form-control">
                               {this.state.categorias.map(categoria => (
                                 <option value={categoria.categoria_id}  >{categoria.categoria}</option>
@@ -63,20 +71,22 @@ export default class Class extends Component {
                             </select>
                           </div>
 
-
                         </div>
                       </div> 
                     </div>
                 
-                    <div className="col-sm-4">
-                      <div className="card text-center shadow-sm bg-white rounded" Style="width: 100%">
+                    {/*Hub de la Imagen*/}
+                    <div className="col-sm-4 ml-auto">
+                      <div className="card shadow-sm bg-white rounded" Style="width: 100%">
                         <div className="card-body">
 
                           <div className="form-group">
-                            <img src="/img/preimg.png" alt="showImagen" class="rounded-lg" Style="width: 200px; height: 200px"/>
+                            <img src="/img/preimg.png" alt="showImagen" class="rounded-lg" Style="width: 100%; height: 100%"/>
                           </div>
+                          
                           <div className="form-group"> 
                             {/*Posteriormente se hará un boton funcional para subir imagen*/}
+                            <label> Imagen del producto </label>
                             <input type="text" name="imagen" placeholder="Direccion de la imagen" className="form-control" autofocus/>
                           </div>
 
@@ -98,5 +108,15 @@ export default class Class extends Component {
         );
     }
 }
+
+const HubHeader = styled.nav`
+    background: var(--mainWhite);
+    .nav-link{
+      color: green !important;
+    }
+`
+
+
+
 
 

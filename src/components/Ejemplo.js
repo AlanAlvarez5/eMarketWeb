@@ -21,33 +21,6 @@ export default class Ejemplo extends Component {
                                     <div className="form-group">
                                         <input type="text" name="correo" placeholder="E-Mail" className="form-control" autofocus/>
                                     </div>
-                                    <div className="form-group">
-                                        <input type="password" name="password" placeholder="Contraseña" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" name="direccion" placeholder="Direccion" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" name="ciudad" placeholder="Ciudad" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" name="estado" placeholder="Estado" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="number" name="cp" placeholder="C.P" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" name="telefono" placeholder="Telefono" className="form-control"/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="text" name="rfc" placeholder="RFC" className="form-control"/>
-                                    </div>
-                                    <div className = "card-text text-left" >
-                                        <p >Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de eMarket. </p>
-                                    </div>
-                                    <div className="form-group text-right" >
-                                        <button className="btn btn-success " type= "submit" value="Submit" onClick={() => {alert("Uusario creado")}}>Registrarse</button>
-                                    </div>
                                 </form>
                             </div>
                         </div>
