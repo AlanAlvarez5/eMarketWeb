@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class SingUp extends Component {
+export default class SignUp extends Component {
     render() {
         return (
             <div className="container p-4" >
@@ -12,18 +12,18 @@ export default class SingUp extends Component {
                                 <h3>Registro</h3>
                             </div>
                             <div className="card-body">
-                                <form action="/signup" method="post">
+                                <form action="/users/addUser" method="post">
                                     <div className="form-group">
                                         <input type="text" name="username" placeholder="Usuario" className="form-control" autofocus/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="password" name="password" placeholder="Contraseña" className="form-control"/>
                                     </div>
                                     <div className="form-group">
                                         <input type="text" name="nombre" placeholder="Nombre" className="form-control" autofocus/>
                                     </div>
                                     <div className="form-group">
                                         <input type="text" name="correo" placeholder="E-Mail" className="form-control" autofocus/>
-                                    </div>
-                                    <div className="form-group">
-                                        <input type="password" name="password" placeholder="Contraseña" className="form-control"/>
                                     </div>
                                     <div className="form-group">
                                         <input type="text" name="direccion" placeholder="Direccion" className="form-control"/>
