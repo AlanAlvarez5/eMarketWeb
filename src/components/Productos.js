@@ -25,22 +25,19 @@ export default class Productos extends Component {
 
     render() {
         return (
-            <div className="py-0">
-                <div className="container">
-                    <Title name = "Nuestros" title="productos"/>
-                    <div className="row" >
+            <div className="container">
+                <Title name = "Nuestros" title="productos"/>
+                <div className="row" >
+                    {this.state.productos.map(producto => (
                         <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
-                            {this.state.productos.map(producto => (
                             <div className="card">
                                 <div className="img-container p-5">
                                     <Link>
                                         <img src={producto.imagen} alt="product" className="card-img-top"/>
                                     </Link>
-
                                 </div>
 
                                 <div className="card-footer d-flex justify-content-between">
-                                
                                     <div key={producto.id} >
                                         <p className="align-self-center mb-0">
                                             {producto.nombre}
@@ -53,15 +50,13 @@ export default class Productos extends Component {
                                             <button className="DetallesProducto"> Detalles </button>
                                         </Link>
                                     </div>
-
                                 </div>
                             </div>
-                            ))}
                         </ProductWrapper>
-
-                    </div>
+                    ))}
                 </div>
             </div>
+
 
         );
     }
