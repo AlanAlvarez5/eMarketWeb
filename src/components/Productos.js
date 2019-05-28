@@ -22,7 +22,9 @@ export default class Productos extends Component {
                 {this.state.productos.map(producto => (
 
                     <tr key={producto.id} >
+                        <td>{producto.proveedor_id}</td>
                         <td>{producto.nombre}</td>
+                        <td>{producto.precio}</td>
 
                         <td>
                             <Link to={"/Productos/" + producto.id}>
@@ -31,6 +33,7 @@ export default class Productos extends Component {
                         </td>
 
                     </tr>
+
                 ))}
                 </div>
 

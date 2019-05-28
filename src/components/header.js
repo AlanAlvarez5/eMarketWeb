@@ -13,7 +13,7 @@ export default class Header extends Component {
         
         <ul className = "navbar-nav align-items-center">
             <li className = "nav-item ml-5">
-                <Link to = "/" className = "nav-link text-success">Productos</Link>
+                <Link to = "/Productos" className = "nav-link text-success">Productos</Link>
             </li>
         </ul>
         <Link to = "/Registro" className = "ml-auto">

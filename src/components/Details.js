@@ -9,7 +9,7 @@ export default class Details extends Component {
 
     componentDidMount() {
     var url =
-        "/Details" + this.props.producto_id;
+        "/Productos/Details" + this.props.producto_id;
     fetch(url)
     .then(res => res.json())
     .then(data =>
