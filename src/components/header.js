@@ -7,18 +7,32 @@ export default class Header extends Component {
   render() {
     return (
       <NavWrapper className = "nav navbar-expand-sm navbar-dark px-sm-5">
-        <Link to={'/'}>
-            <img src =  "/img/icon.png " alt = "store" className = "navbar-brand" height="69px"/>
-        </Link>
         
-        <ul className = "navbar-nav align-items-center">
-            <li className = "nav-item ml-5">
-                <Link to = "/" className = "nav-link text-success">Productos</Link>
-            </li>
+        
+          <Link to={'/'}>
+              <img src =  "/img/icon.png " alt = "store" className = "navbar-brand" height="69px"/>
+          </Link>
+          
+         <ul className="navbar-nav ml-auto">
+            <form className="form-inline ml-auto">
+              <input className="form-control mr-sm-2 col-xs-4" type="search" placeholder="Productos" aria-label="Search"/>
+              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
         </ul>
-        <Link to = "/Registro" className = "ml-auto">
-        </Link>
-
+        
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item ">
+            <Link to= '/SignUp'  className="nav-link ">
+                Registrarse
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to= '/LogIn'  className="nav-link  ">
+                Ingresar
+            </Link>
+          </li>
+        </ul>
+        
         
   
         <Link to = "/cart" className = "ml-auto">
@@ -43,4 +57,5 @@ const NavWrapper = styled.nav`
        //1rem 16px
        text-transform: capitalize;
     }
+    
 `
