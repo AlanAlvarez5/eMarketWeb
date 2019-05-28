@@ -29,7 +29,7 @@ export default class Details extends Component {
         <h2>{this.state.data.nombre}</h2>
       </div>
 
-      <div className="InformacionAlumno">
+      <div className="InformacionProducto">
         <p>{this.state.data.proveedor_id}</p>
         <p>{this.state.data.precio}</p>
         <p>{this.state.data.descripcion}</p>

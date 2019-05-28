@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Product from './Product';
 import Title from './Title';
 
+import Productos from './Productos';
+
 import ControlledCarousel from './Carousel';
 import {ProductConsumer} from '../context';
 
@@ -12,7 +14,6 @@ export default class Home extends Component {
             <div className = "py-0">
             <ControlledCarousel></ControlledCarousel>
                <div className = "container" >
-                    <Title name = "Nuestros" title = "productos" />
                     <div className = "row">
                         {/* <ProductConsumer>
                             {value=>{
@@ -21,6 +22,7 @@ export default class Home extends Component {
                                 })
                             }}
                         </ProductConsumer> */}
+                        <Productos> </Productos>
                         
                     </div>
                </div>

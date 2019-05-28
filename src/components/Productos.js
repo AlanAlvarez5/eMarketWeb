@@ -38,7 +38,7 @@ export default class Productos extends Component {
                                 </div>
 
                                 <div className="card-footer d-flex justify-content-between">
-                                    <div key={producto.id} >
+                                    <div key={producto.producto_id} >
                                         <p className="align-self-center mb-0">
                                             {producto.nombre}
                                         </p>
@@ -46,7 +46,7 @@ export default class Productos extends Component {
                                             <span className="mr-1">$</span>
                                             {producto.precio}
                                         </h5>
-                                        <Link to={"/Productos/" + producto.id}>
+                                        <Link to={"/Productos/" + producto.producto_id}>
                                             <button className="DetallesProducto"> Detalles </button>
                                         </Link>
                                     </div>
