@@ -35,6 +35,20 @@ export default class Productos extends Component {
                                     <Link>
                                         <img src={producto.imagen} alt="product" className="card-img-top"/>
                                     </Link>
+                                    {/* boton de Carrito
+                                    <button className = "cart-btn" disabled = {inCart ? true : false} onClick = { ()=>{
+                                        value.addToCart(id);
+                                        value.openModal(id);
+                                        }}>
+                                    {inCart ? 
+                                        (<p className="text-capitalize mb-0" disabled>
+                                        {" "}
+                                        En Carrito</p>
+                                        ):(
+                                        <i className="fas fa-cart-plus"/>
+                                        )}
+                                    </button>
+                                    */}
                                 </div>
 
                                 <div className="card-footer d-flex justify-content-between">
