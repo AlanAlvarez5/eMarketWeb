@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
 import Cart from './components/Cart/Cart'
+import Productos from './components/Productos'
 import Details from './components/Details'
 import Ejemplo from   './components/Ejemplo';
 import Home from './components/Home';
@@ -23,8 +24,10 @@ export default class Class extends Component {
                 <Route path = "/SignUp" component = {SignUp}></Route>
                 <Route path = "/LogIn" component = {LogIn}></Route>
                 <Route path = "/Cart" component = {Cart}></Route>
+                <Route path = "/Productos" component = {Productos}></Route>
                 <Route path = "/Details" component = {Details}></Route>
                 <Route path = "/Ejemplo" component = {Ejemplo}></Route>
+                
 
               </Switch>
               </React.Fragment>

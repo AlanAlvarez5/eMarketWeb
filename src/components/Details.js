@@ -5,8 +5,7 @@ import {ButtonContainer} from './Button'
 
 export default class Details extends Component {
   
-    state ={data : "",
-            clases: []}
+    state ={data : ""}
 
     componentDidMount() {
     var url =
@@ -25,20 +24,19 @@ export default class Details extends Component {
 
     <div class="Details">
 
-      <div className="HubDeAlumno">
+      <div className="HubDeProducto">
         <h2>{this.state.data.nombre}</h2>
-        <p className="Cargo"> Alumno </p>
       </div>
 
       <div className="InformacionAlumno">
-        <p>{this.state.data.proveedor_ida}</p>
+        <p>{this.state.data.proveedor_id}</p>
         <p>{this.state.data.precio}</p>
         <p>{this.state.data.descripcion}</p>
         <p>{this.state.data.exitencia}</p>
         <p>{this.state.data.categoria_id}</p>
         <p>{this.state.data.genero}</p>
       </div>
-      
+
     </div>
 
 
