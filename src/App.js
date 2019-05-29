@@ -5,6 +5,7 @@ import AddProducto from './components/addProducto';
 import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
+import Profile from './components/Profile'
 import Cart from './components/Cart/Cart'
 import Productos from './components/Productos'
 import Details from './components/Details'
