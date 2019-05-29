@@ -12,7 +12,7 @@ export default class SignUp extends Component {
                                 <h3>Registro</h3>
                             </div>
                             <div className="card-body">
-                                <form action="/addUser/SignIn" method="post">
+                                <form action="/authentication/SignUp" method="post">
                                     <div className="form-group">
                                         <input type="text" name="username" placeholder="Usuario" id="validationDefault01" className="form-control" autofocus required/>
                                     </div>
