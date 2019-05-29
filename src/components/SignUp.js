@@ -14,40 +14,40 @@ export default class SignUp extends Component {
                             <div className="card-body">
                                 <form action="/addUser/SignIn" method="post">
                                     <div className="form-group">
-                                        <input type="text" name="username" placeholder="Usuario" className="form-control" autofocus/>
+                                        <input type="text" name="username" placeholder="Usuario" id="validationDefault01" className="form-control" autofocus required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="password" name="password" placeholder="Contraseña" className="form-control"/>
+                                        <input type="password" name="password" placeholder="Contraseña" id="validationDefault02" className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="nombre" placeholder="Nombre" className="form-control" autofocus/>
+                                        <input type="text" name="nombre" placeholder="Nombre" id="validationDefault03" className="form-control" autofocus required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="correo" placeholder="E-Mail" className="form-control" autofocus/>
+                                        <input type="text" name="correo" placeholder="E-Mail" id="validationDefault04" className="form-control" autofocus required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="direccion" placeholder="Direccion" className="form-control"/>
+                                        <input type="text" name="direccion" placeholder="Direccion" id="validationDefault05" className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="ciudad" placeholder="Ciudad" className="form-control"/>
+                                        <input type="text" name="ciudad" placeholder="Ciudad" id="validationDefault06" className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="estado" placeholder="Estado" className="form-control"/>
+                                        <input type="text" name="estado" placeholder="Estado" id="validationDefault07"className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="number" name="cp" placeholder="C.P" className="form-control"/>
+                                        <input type="number" name="cp" placeholder="C.P" id="validationDefault08" className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="telefono" placeholder="Telefono" className="form-control"/>
+                                        <input type="text" name="telefono" placeholder="Telefono" id="validationDefault09" className="form-control" required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" name="rfc" placeholder="RFC" className="form-control"/>
+                                        <input type="text" name="rfc" placeholder="RFC" id="validationDefault10"className="form-control" required/>
                                     </div>
-                                    <div className = "card-text text-left" >
+                                    <div className = "card-text" >
                                         <p >Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de eMarket. </p>
                                     </div>
-                                    <div className="form-group text-right" >
-                                        <button className="btn btn-success " type= "submit" value="Submit" onClick={() => {alert("Usuario creado")}}>Registrarse</button>
+                                    <div className="form-group" >
+                                        <button className="btn btn-success " type= "submit" value="Submit">Registrarse</button>
                                     </div>
                                 </form>
                             </div>

@@ -10,7 +10,7 @@ export default class LogIn extends Component {
                             <div className="card-header">
                                 <h3>Iniciar Sesión</h3>
                             </div>
-                            <img src="/img/logo.png" alt="Logo Fazt" className="card-img-top mx-auto m-2 rounded-circle w-50"/>
+                            <img src="/img/user.png" alt="Logo Fazt" className="card-img-top mx-auto m-2 rounded-circle w-50"/>
                             <div className="card-body">
                                 <form action="/LogIn" method="post">
                                     <div className="form-group">
@@ -19,7 +19,7 @@ export default class LogIn extends Component {
                                     <div className="form-group">
                                         <input type="password" name="password" placeholder="Contraseña" className="form-control"/>
                                     </div>
-                                    <button className="btn btn-primary btn-block" type="submit">
+                                    <button className="btn btn-success btn-block" type="submit">
                                         Ingresar
                                     </button>
                                 </form>

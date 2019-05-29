@@ -20,7 +20,7 @@ export default class Header extends Component {
             </form>
         </ul>
         
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto" Style="margin-top: 0.7rem">
           <li className="nav-item ">
             <Link to= '/SignUp'  className="nav-link ">
                 Registrarse
@@ -42,7 +42,6 @@ export default class Header extends Component {
                 </span>
                 Carrito
             </ButtonContainer>
-            
         </Link>
       </NavWrapper>
     );
