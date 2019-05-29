@@ -3,12 +3,6 @@ import {Link} from 'react-router-dom';
 
 import Title from './Title';
 import styled from 'styled-components';
-import ProtoTypes from 'prop-types';
-
-import {ProductConsumer} from '../context';
-
-
-
 
 export default class Productos extends Component {
 
