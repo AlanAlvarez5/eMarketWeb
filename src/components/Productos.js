@@ -140,15 +140,14 @@ const ProductWrapper =styled.div`
     transition: all 0.3s linear;
 }
 
-.img-container: hover .cart-btn {
+.img-container:hover .cart-btn {
     transform: translate(0, 0);
 }
 
-.cart-btn: hover {
+.cart-btn:hover {
     color: green;
     cursor: pointer;
 }
-
 
 `
 
