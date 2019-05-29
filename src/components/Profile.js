@@ -9,8 +9,10 @@ export default class Profile {
                     <div class="col-md-4 mx-auto">
                         <div class="card text-center">
                             <div class="card-body">
+                                {/*
                                 <h3>Welcome {{user_id.fullname}}</h3>
                                 <h4>{{user_id.username}}</h4>
+                                */}
                                 <a href="/links" class="btn btn-primary m-4">Save your Links</a>
                             </div>
                         </div>
