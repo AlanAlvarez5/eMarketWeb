@@ -42,8 +42,8 @@ export default class AddProducto extends Component {
                         <div className="card-body">
                                                   
                           <div className="form-group">
-                            <label for="validationDefault01"> ID del proveedor </label>
-                            <input type="text" name="proveedor_id" placeholder="ID del proveedor" id ="validationDefault01" className="form-control" autofocus defaultValue={this.props.proveedor_id} required/>
+                            <label for="validationDefault01"> ID del user </label>
+                            <input type="text" name="user_id" placeholder="ID del proveedor" id ="validationDefault01" className="form-control" autofocus defaultValue={this.props.proveedor_id} required/>
                           </div>
                           <div className="form-group">
                             <label for="validationDefault02"> Nombre del producto </label>

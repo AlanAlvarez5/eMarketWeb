@@ -10,8 +10,8 @@ export default class Profile {
                         <div class="card text-center">
                             <div class="card-body">
                                 {/*
-                                <h3>Welcome {{user_id.fullname}}</h3>
-                                <h4>{{user_id.username}}</h4>
+                                <h3>Welcome {{user.nombre}}</h3>
+                                <h4>{{user.username}}</h4>
                                 */}
                                 <a href="/links" class="btn btn-primary m-4">Save your Links</a>
                             </div>
