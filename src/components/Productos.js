@@ -71,7 +71,7 @@ export default class Productos extends Component {
 }
 
 
-{/*
+/*
 Productos.propTypes = {
     product: PropTypes.shape({
       id: PropTypes.number,
@@ -82,7 +82,7 @@ Productos.propTypes = {
     }).isRequired
 };
 
-*/}
+*/
 
 const ProductWrapper =styled.div`
 
