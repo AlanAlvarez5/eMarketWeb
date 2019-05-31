@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Product from './Product';
-import Title from './Title';
+// import Product from './Product';
+// import Title from './Title';
 
 import Productos from './Productos';
 
 import ControlledCarousel from './Carousel';
-import {ProductConsumer} from '../context';
+// import {ProductConsumer} from '../context';
 
 export default class Home extends Component {
     render() {
