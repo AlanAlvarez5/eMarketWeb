@@ -13,6 +13,7 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 
 
+
 export default class Class extends Component {
 
     render() {
@@ -42,3 +43,4 @@ export default class Class extends Component {
         );
     }
 }
+
