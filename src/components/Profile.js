@@ -1,23 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
+import axios from 'axios';
 
 export default class Profile extends Component {
-    
-    render() {
-        
-        return (
-            <div class="container p-4">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            {{username}}
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-        </div>
+    state = {
+        user: []
+    }
 
-        );
+    componentWillMount() {
+        axios.get('http://localhost:3001/authentication').then((response) => {
+            this.setState({
+                user: response.data
+            });
+        });
+    }
+    render() {
+        return (
+            <div>
+            
+            </div>
+        )
     }
 }
+
