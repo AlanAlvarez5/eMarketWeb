@@ -33,8 +33,20 @@ export default class Class extends Component {
                   return <Details producto_id={producto_id} />;
                   }}
                 />
-                <Route path = "/Profile" component = {Profile}></Route>
                 
+                <Route exact path="/Profile" component={Profile} />;
+
+                var Profile = <Route exact path="/Profile/:username" render={(props) => {
+                let username= props.location.pathname.replace('/Profile/', '');
+
+                return (
+                  <Profile
+                    username ={username}
+                  />
+                )
+              }}/>;
+
+
 
                 <Route path = "/Details" component = {Details}></Route>
                 <Route path = "/Ejemplo" component = {Ejemplo}></Route>
