@@ -1,6 +1,24 @@
 import React, { Component } from 'react';
 
+
 export default class LogIn extends Component {
+    state = {
+        username: "",
+        user_id: 0,
+    }
+
+/*
+    setUserId = (value) => {
+        localStorage.setItem('user_id', value)
+    }
+
+    componentDidMount() {
+        fetch('/LogIn')
+        .then(res => res.json())
+        .then(user_id => this.setState({user_id: user_id}));
+        this.setUserId(this.state.user_id)
+    }
+*/
     render() {
         return (
             <div className="container p-4">
