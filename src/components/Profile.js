@@ -8,7 +8,7 @@ export default class Profile extends Component {
 
     componentDidMount() {
     var url =
-        "/authentication/Profile" + this.props.username;
+        "/Profile/" + this.props.username;
     fetch(url)
     .then(res => res.json())
     .then(user =>
@@ -20,7 +20,8 @@ export default class Profile extends Component {
         return (
         <div className="Profile">
        <div className="HubDeUsuario">
-            <h2>{this.state.user.nombre}</h2>
+            <h2>{this.state.user.username}</h2>
+            <p>{this.state.user.nombre}</p>
             <p className="Cargo"> Info </p>
 
         </div>                
