@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 //import axios from 'axios';
 import styled from 'styled-components'
 import {Link} from 'react-router-dom';
+import Productos from './Productos';
+
+
 
 
 export default class Profile extends Component {
@@ -22,10 +25,17 @@ export default class Profile extends Component {
     render() {
         return (
         <div className="Profile">
-        
+            <HubHeader className = "nav navbar-expand-sm navbar-dark px-sm-5 text-right">                    
+                <div className="ml-auto">
+                    <Link to={"/addProducto/" + this.state.user.user_id}>
+                        <button type="button" className="btn btn-success"> Publicar Producto </button>
+                    </Link>
+                </div>
+            </HubHeader>
+
             <div className="container">
                 <div className="row" Style="margin-top: 1rem">
-                    <div className="col-sm-4">
+                    <div className="col-sm-3">
                     <div className="card">
                         <InfoProfile>
                             <h8 className="Titles">NOMBRE</h8>
@@ -54,13 +64,11 @@ export default class Profile extends Component {
                         
                     </div>
 
-                    <div className="col-sm-7 ml-auto text-center">
+                    <div className="col-sm-8 ml-auto text-center">
                     <div className="card">
                         <InfoProfile>
-                            <Link to={"/addProducto/" + this.state.user.user_id}>
-                                <button type="button" className="btn btn-success"> Publicar Producto </button>
-                            </Link>
-
+                            <h2 Style="margin-top: 2rem"> Mis productos en venta </h2>
+                            <Productos></Productos>
                         </InfoProfile>
                     </div>
                     </div>
@@ -79,3 +87,14 @@ const InfoProfile = styled.div `
 }
 
 `
+
+const HubHeader = styled.nav`
+    background: var(--mainWhite);
+    .nav-link{
+      color: green !important;
+    }
+`
+
+
+
+

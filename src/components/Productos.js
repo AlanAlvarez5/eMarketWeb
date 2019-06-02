@@ -20,7 +20,7 @@ export default class Productos extends Component {
     render() {
         return (
             <div className="container">
-                <Title name = "Nuestros" title="productos"/>
+                {/*<Title name = "Nuestros" title="productos"/> */}
                 <div className="row" >
                     {this.state.productos.map(producto => (
                         <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
