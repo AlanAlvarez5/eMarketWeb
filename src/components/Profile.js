@@ -36,7 +36,6 @@ export default class Profile extends Component {
             <div className="container">
                 <div className="row" Style="margin-top: 1rem">
                     <div className="col-sm-3">
-                    <div className="card">
                         <InfoProfile>
                             <h8 className="Titles">NOMBRE</h8>
                             <p>{this.state.user.nombre}</p>
@@ -59,18 +58,15 @@ export default class Profile extends Component {
                             <div>
                                 <button type="button" className="btn btn-outline-success"> Editar Información</button>
                             </div>
-                        </InfoProfile>
-                    </div>
-                        
+                        </InfoProfile>                        
                     </div>
 
                     <div className="col-sm-8 ml-auto text-center">
-                    <div className="card">
                         <InfoProfile>
                             <h2 Style="margin-top: 2rem"> Mis productos en venta </h2>
                             <Productos></Productos>
                         </InfoProfile>
-                    </div>
+                    
                     </div>
                 </div>
             </div>                
