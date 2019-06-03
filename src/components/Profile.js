@@ -61,7 +61,7 @@ export default class Profile extends Component {
                         </InfoProfile>                        
                     </div>
 
-                    <div className="col-sm-8 ml-auto text-center">
+                    <div className="col-sm-9 ml-auto text-center">
                         <InfoProfile>
                             <h2 Style="margin-top: 2rem"> Mis productos en venta </h2>
                             <Productos></Productos>

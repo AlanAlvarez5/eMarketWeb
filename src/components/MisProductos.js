@@ -9,7 +9,7 @@ export default class Productos extends Component {
     state = {productos: []}
 
     componentDidMount() {
-        fetch('/Productos')
+        fetch('/MisProductos')
           .then(res => res.json())
           .then(productos => this.setState({ productos }));
     }
