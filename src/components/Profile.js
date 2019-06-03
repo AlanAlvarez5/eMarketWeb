@@ -15,7 +15,7 @@ export default class Profile extends Component {
     componentDidMount() {
     var url =
         "/Profile/" + this.props.username;
-    fetch(url)
+    fetch(url,  {credentials: 'include'})
     .then(res => res.json())
     .then(user =>
         this.setState({ user })
