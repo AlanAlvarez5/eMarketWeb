@@ -13,7 +13,7 @@ export default class Compras extends Component {
         compras :[] ,
     }
 
-    
+
     componentDidMount(){
         fetch('/compras/')
         .then(response => response.json())
@@ -26,8 +26,10 @@ export default class Compras extends Component {
                 <h1>Compras</h1>
                 {this.state.compras.map(compra => (
                     <div>
-                        <h3>{compra.compra_id}</h3>
-                        <h3>{compra.precio_total}</h3>
+                        <h3>{compra.nombre}</h3>
+                        <h3>{compra.username}</h3>
+                        <h3>{compra.precio}</h3>
+                        <h3>{compra.fecha}</h3>
                     </div>
                 ))}
             </div>
