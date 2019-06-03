@@ -56,7 +56,7 @@ export default class Details extends Component {
 
 
             {/*Hub de datos del producto (los input(*/}
-            <div className="col-sm-5 ml-auto">
+            <div className="col-sm-7 ml-auto">
                 <div className="card shadow-sm bg-white rounded" Style="width: 100%">
                   <div className="card-body">
                     <InfoProducto>
@@ -81,17 +81,6 @@ export default class Details extends Component {
           </div> {/*row*/}
 
         </div> {/*Container*/}
-
-
-
-
-
-      <div className="InformacionProducto">
-        <p>{this.state.data.exitencia}</p>
-        <p>{this.state.data.categoria_id}</p>
-      </div>
-
-
     </div>
 
 
