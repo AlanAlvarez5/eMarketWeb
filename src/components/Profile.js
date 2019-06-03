@@ -67,7 +67,7 @@ export default class Profile extends Component {
                     <div className="col-sm-9 ml-auto text-center">
                         <div className="card shadow-sm bg-white rounded">
                         <InfoProfile>
-                            <h2 Style="margin-top: 2rem"> Mis productos en venta </h2>
+                            <h3 className="Titles" Style="margin-top: 2rem"> Mis productos en venta </h3>
                             <Productos></Productos>
                         </InfoProfile>
                         </div>
