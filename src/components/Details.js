@@ -57,22 +57,16 @@ export default class Details extends Component {
 
             {/*Hub de datos del producto (los input(*/}
             <div className="col-sm-7 ml-auto">
-                  <div className="card-body">
-                    <InfoProducto>
-                    <h1>{this.state.data.nombre}</h1>
-                    <h4>${this.state.data.precio} </h4>
-
-                    <p> {this.state.data.descripcion}</p>
-
-                    <h7 className="Titles">EXISTENCIA </h7>
-                    <p>{this.state.data.existencia}</p>
-                    </InfoProducto>
-
-                    <div>
-                      <button type="button" className="btn btn-success"> Agregar a carrito </button>
-                    </div>
-                  
-                  </div>
+              <InfoProducto>
+                <h1>{this.state.data.nombre}</h1>
+                <h4>${this.state.data.precio} </h4>
+                <p> {this.state.data.descripcion}</p>
+                <h7 className="Titles">EXISTENCIA </h7>
+                <p>{this.state.data.existencia}</p>
+              </InfoProducto>
+              <div>
+                <button type="button" className="btn btn-success"> Agregar a carrito </button>
+              </div>
             </div>
                 
 
