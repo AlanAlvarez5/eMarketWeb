@@ -17,6 +17,7 @@ export default class Productos extends Component {
         alert("Producto eliminado");
     }
 
+
     render() {
         return (
             <div className="container">
@@ -43,6 +44,14 @@ export default class Productos extends Component {
                                         <Link to={"/Productos/" + producto.producto_id}>
                                             <button type="button" className="btn btn-outline-success"> Detalles </button>
                                         </Link>
+                                        <form action="/compras/addCompra" method="POST">
+                                        <input type="hidden" name="producto_id"/>
+                                        <input type="hidden" name="cantidad"/>
+                                        <input type="hidden" name="user_id"/>
+                                        <input type="hidden" name="fecha"/>
+
+                                        <button type="submit" className="btn btn-outline-success" onClick={() => this.addCompra()}> Comprar </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
