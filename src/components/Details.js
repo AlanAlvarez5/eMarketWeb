@@ -33,7 +33,7 @@ export default class Details extends Component {
       <div class="Details">
         <HubHeader className = "nav navbar-expand-sm navbar-dark px-sm-5">
             <div>
-              <a className="btn btn-outline-success" href="http://localhost:3000" role="button"> Volver </a>
+              <a className="btn btn-outline-success" href="/" role="button"> Volver </a>
             </div>
         </HubHeader>
 
@@ -45,13 +45,11 @@ export default class Details extends Component {
                                         
             {/*Hub de la Imagen*/}
             <div className="col-sm-4">
-                <div className="card shadow-sm bg-white rounded" Style="width: 100%">
                     <div className="card-body">
                       <div className="form-group"> 
                         <img src={this.state.data.imagen} alt="showImagen" class="rounded-lg" Style="width: 100%; height: 100%"/>                    
                       </div>
                     </div>
-                </div>
             </div>
 
 
