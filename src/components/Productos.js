@@ -41,7 +41,7 @@ export default class Productos extends Component {
                                             {producto.precio}
                                         </h5>
                                         <Link to={"/Productos/" + producto.producto_id}>
-                                            <button className="DetallesProducto"> Detalles </button>
+                                            <button type="button" className="btn btn-outline-success"> Detalles </button>
                                         </Link>
                                     </div>
                                 </div>
