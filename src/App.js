@@ -11,6 +11,7 @@ import Details from './components/Details'
 import Ejemplo from   './components/Ejemplo';
 import Home from './components/Home';
 import Profile from './components/Profile';
+import Compras from './components/Compras';
 
 
 
@@ -26,6 +27,7 @@ export default class Class extends Component {
                 <Route path = "/SignUp" component = {SignUp}></Route>
                 <Route path = "/LogIn" component = {LogIn}></Route>
                 <Route path = "/Cart" component = {Cart}></Route>
+                <Route path = "/Compras" component = {Compras}></Route>
                 <Route exact path = "/Productos" component = {Productos}></Route>
                 
                 <Route exact path = "/Productos/:producto_id"
