@@ -41,18 +41,24 @@ export default class Productos extends Component {
                                             <span className="mr-1">$</span>
                                             {producto.precio}
                                         </h5>
-                                        <Link to={"/Productos/" + producto.producto_id}>
-                                            <button type="button" className="btn btn-outline-success"> Detalles </button>
-                                        </Link>
-                                        <form action="/compras/addCompra" method="POST">
-                                        <input type="hidden" value={1} name="user_id"/>
-                                        <input type="hidden" value={producto.producto_id}name="producto_id"/>
-                                        <input type="hidden" value={1} name="cantidad"/>
-                                        <input type="hidden" value={producto.precio} name="precio"/>
-                                        <input type="hidden" value="06/03/19" name="fecha"/>
 
-                                        <button type="submit" className="btn btn-outline-success" onClick={() => this.addCompra()}> Comprar </button>
-                                        </form>
+                                        <div className="row">
+                                            <div Style="margin-left: 1rem">
+                                                <Link to={"/Productos/" + producto.producto_id}>
+                                                    <button type="button" className="btn btn-outline-success"> Detalles </button>
+                                                </Link>
+                                            </div>
+                                            <div Style="margin-left: 2.8rem">
+                                                <form action="/compras/addCompra" method="POST">
+                                                    <input type="hidden" value={1} name="user_id"/>
+                                                    <input type="hidden" value={producto.producto_id}name="producto_id"/>
+                                                    <input type="hidden" value={1} name="cantidad"/>
+                                                    <input type="hidden" value={producto.precio} name="precio"/>
+                                                    <input type="hidden" value="06/03/19" name="fecha"/>
+                                                    <button type="submit" className="btn btn-success" onClick={() => this.addCompra()}> Comprar </button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
