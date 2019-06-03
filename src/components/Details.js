@@ -70,7 +70,7 @@ export default class Details extends Component {
                     </InfoProducto>
 
                     <div>
-                      <button type="button" className="btn btn-success"> Agregar a carritos </button>
+                      <button type="button" className="btn btn-success"> Agregar a carrito </button>
                     </div>
                   
                   </div>
