@@ -33,7 +33,7 @@ export default class Details extends Component {
       <div class="Details">
         <HubHeader className = "nav navbar-expand-sm navbar-dark px-sm-5">
             <div>
-              <a className="btn btn-outline-success" href="" role="button"> Volver </a>
+              <a className="btn btn-outline-success" href="/" role="button"> Volver </a>
             </div>
         </HubHeader>
 

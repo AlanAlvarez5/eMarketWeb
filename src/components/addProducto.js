@@ -22,7 +22,7 @@ export default class AddProducto extends Component {
 
                 <HubHeader className = "nav navbar-expand-sm navbar-dark px-sm-5">
                   <div>
-                    <a className="btn btn-outline-success" href="http://localhost:3000" role="button"> Volver </a>
+                    <a className="btn btn-outline-success" href="/" role="button"> Volver </a>
                   </div>
                   <ul className="ml-1">
                       <h3> Nuevo Producto</h3>
